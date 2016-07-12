@@ -56,3 +56,8 @@ layouts views controllers forms均支持从模板生成,除form外均支持多模板选择，form默
 在从模板生成单一文件时，支持占位替换，批量生成不支持。
 
 
+###关于数据库
+
+在使用'生成Models','生成migrations','生成seeds','生成表单'这些功能前请先配置好主项目的数据库连接，胖子只测试了MYsql，其它坑请自己趟。
+
+此外在'生成mirations'中还可以配置模板数据库连接，从其它数据库的数据表生成你需要的migration。
