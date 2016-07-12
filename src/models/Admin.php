@@ -3,7 +3,7 @@
  * 作者: 神奇的胖子  http://zhangxihai.cn
  * 时间: 2016/2/17 17:03
  */
-namespace Juhedao\LaravelAdminGenerator\Http\Models;
+namespace Juhedao\LaravelAdminGenerator\Models;
 
 
 use Illuminate\Database\Eloquent\Model;

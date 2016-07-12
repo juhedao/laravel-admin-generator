@@ -37,6 +37,8 @@ Juhedao\LaravelAdminGenerator\AdminGeneratorServiceProvider::class,
 php artisan vendor:publish
 ```
 
+为主项目配置好数据库连接就可以使用了。
+
 ####注意：在项目正式发布后记得删除vendor下的以及'/public/assets'下的'juhedao'文件夹哦。
 
 
@@ -45,5 +47,12 @@ php artisan vendor:publish
 打开'http://yousite/admin/generator'就见到管理页面了
 
 管理员账号是'admin'，密码是'admin888'.此外sqlite的管理密码也是'admin888'
+
+
+###关于模板
+
+layouts views controllers forms均支持从模板生成,除form外均支持多模板选择，form默认default,模板存储在'vendor/juhedao/laravel-admin-generator'下。支持子文件夹，建议使用 编号+点+名称 方式进行命名。
+
+在从模板生成单一文件时，支持占位替换，批量生成不支持。
 
 

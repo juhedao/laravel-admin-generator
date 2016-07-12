@@ -3,7 +3,7 @@
  * 作者: 神奇的胖子  http://zhangxihai.cn
  * 时间: 2016/2/16 15:47
  */
-namespace Juhedao\LaravelAdminGenerator\Http\Controllers;
+namespace Juhedao\LaravelAdminGenerator\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Auth\EloquentUserProvider;
@@ -18,7 +18,7 @@ use File;
 use Illuminate\Filesystem\Filesystem as Filesystem;
 use Juhedao\LaravelAdminGenerator\SqlToMigrations as SqlToMigrations;
 
-use Juhedao\LaravelAdminGenerator\Http\Models\Admin as Admin;
+use Juhedao\LaravelAdminGenerator\Models\Admin as Admin;
 
 class AdminGeneratorController extends BaseController{
 
