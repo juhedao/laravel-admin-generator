@@ -24,6 +24,8 @@ PS: 很多功能胖子还没测试，但是大概就是那样，错也错不到哪里去，坑不算太大！
 
 或者直接运行'composer require juhedao/laravel-admin-generator=dev-master'
 
+建议直接运行这条命令，节约时间。
+
 
 ##配置
 
