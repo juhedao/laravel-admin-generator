@@ -23,5 +23,5 @@
             "/Juhedao\\LaravelAdminGenerator\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
