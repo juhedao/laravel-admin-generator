@@ -1,6 +1,6 @@
 ﻿{
     "name": "juhedao/laravel-magic-gui",
-    "description": "admin generator.",
+    "description": "admin generator",
     "homepage": "http://zhangxihai.cn",
     "keywords": ["laravel", "admin", "generator"],
     "license": "MIT",
