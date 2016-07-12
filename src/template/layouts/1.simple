@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>@section('page.title')-标题@show</title>
+
+<!-- 通用meta -->
+<!-- /通用meta -->
+
+@section('page.meta')
+<!-- 可替换meta -->
+<meta name="keywords" content="SEO关键词">
+<meta name="description" content="SEO描述">
+<!-- /可替换meta -->
+@show
+
+<!-- 通用css -->
+<!-- /通用css -->
+
+@section('page.css')
+<!-- 可替换css -->
+<!-- /可替换css -->
+@show
+
+<!-- 通用script -->
+<!-- /通用script -->
+
+@section('page.script')
+<!-- 可替换script -->
+<!--
+<script type="text/javascript">
+//head-script
+//jQuery(document).ready(function(){
+//});
+</script>
+-->
+<!-- /可替换script -->
+@show
+
+@section('page.head')
+<!-- 额外的head -->
+<!-- /额外的head -->
+@show
+
+</head>
+<body>
+
+@section('page.header')
+<!-- 可替换header -->
+<!-- /可替换header -->
+@show
+
+@section('page.main')
+<!-- 可替换main -->
+<!-- /可替换main -->
+@show
+
+@section('page.footer')
+<!-- 可替换footer -->
+<!--
+<script type="text/javascript">
+    (function ($,window) {
+        //jquery
+    })(window.jQuery,window);
+</script>
+-->
+<!-- /可替换footer -->
+@show
+
+[[测试替换]]
+</body>
+</html>
