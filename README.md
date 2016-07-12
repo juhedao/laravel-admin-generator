@@ -1,4 +1,4 @@
-# Laravel Magic Gui
+# Laravel Admin Generator
 
 ##หตร๗
 
