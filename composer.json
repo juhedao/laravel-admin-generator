@@ -4,6 +4,7 @@
     "homepage": "http://zhangxihai.cn",
     "keywords": ["laravel", "admin", "generator", "gui"],
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "juhedao",
@@ -22,6 +23,6 @@
         "psr-4": {
             "/Juhedao\\LaravelAdminGenerator\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
+
 }
