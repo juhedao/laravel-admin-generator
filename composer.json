@@ -22,6 +22,5 @@
         "psr-4": {
             "/Juhedao\\LaravelAdminGenerator\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

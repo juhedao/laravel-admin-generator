@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Laravel Admin Generator @yield('Title')</title>
+<title>Laravel Magic Gui @yield('Title')</title>
 
 <link href="/assets/juhedao/admin-generator/css/bootstrap.min.css" rel="stylesheet">
 <link href="/assets/juhedao/admin-generator/css/datepicker3.css" rel="stylesheet">
