@@ -15,14 +15,14 @@ PS: 很多功能胖子还没测试，但是大概就是那样，错也错不到哪里去，坑不算太大！
 ```
 {
     "require": {
-        "juhedao/laravel-magic-gui": "dev-master"
+        "juhedao/laravel-admin-generator": "dev-master"
     }
 }
 ```
 执行'composer install'
 
 
-或者直接运行'composer require juhedao/laravel-magic-gui=dev-master'
+或者直接运行'composer require juhedao/laravel-admin-generator=dev-master'
 
 
 ##配置
