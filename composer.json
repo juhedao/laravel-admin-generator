@@ -1,5 +1,5 @@
 {
-    "name": "juhedao/laravel-magic-gui",
+    "name": "juhedao/LaravelAdminGenerator",
     "description": "admin generator",
     "homepage": "http://zhangxihai.cn",
     "keywords": ["laravel", "admin", "generator", "gui"],

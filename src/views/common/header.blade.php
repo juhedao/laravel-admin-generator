@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span>Laravel</span> Magic Gui</a>
+            <a class="navbar-brand" href="#"><span>Laravel</span> Admin Generator</a>
             <ul class="user-menu">
 
                 <li class="dropdown pull-right">
