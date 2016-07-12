@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "/Juhedao\\LaravelAdminGenerator": "src/"
+            "/Juhedao\\LaravelAdminGenerator\\": "src/"
         }
     },
     "minimum-stability": "dev"
