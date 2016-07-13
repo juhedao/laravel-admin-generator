@@ -269,7 +269,9 @@ class AdminGeneratorController extends BaseController{
         $tableName = \Input::get('table-name');
         $tableComment = \Input::get('table-comment');
         $isRememberToken = \Input::get('isRememberToken');
+        $isRememberToken = isset($isRememberToken);
         $isSoftDeletes = \Input::get('isSoftDeletes');
+        $isSoftDeletes = isset($isSoftDeletes);
         $timestampsType = \Input::get('timestampsType');
 
         $content = SqlToMigrations::covert($tableName,$columns,$isRememberToken,$isSoftDeletes,$timestampsType,$tableComment);
