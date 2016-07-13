@@ -111,16 +111,24 @@ class SqlToMigrations{
                 if($item['cunique']=='true'){
                     $up .= '->unique()';
                 }
+
+                if($item['ctype']!='enum'&&trim($item['cdefault'])!=''){
+                    $default = trim($item['cdefault']);
+                    //if($default!='false'&&$default!='true'&&$item['ctype']!='boolean'){
+                    $default = '\''.$default.'\'';
+                    //}
+                    $up .= '->default('.$default.')';
+                }
             }
             if(!empty($item['ccomment'])){
                 $up .= "->comment = '".$item['ccomment']."'";
             }
             $up .= ';'.PHP_EOL;
         }
-        if($isRememberToken){
+        if($isRememberToken=='true'){
             $up .= '            $table->rememberToken();'.PHP_EOL;
         }
-        if($isSoftDeletes){
+        if($isSoftDeletes=='true'){
             $up .= '            $table->softDeletes();'.PHP_EOL;
         }
         if($timestampsType==1){
@@ -146,18 +154,14 @@ class SqlToMigrations{
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class {$className} extends Migration
-{
-    public function up()
-    {
-        Schema::create('{$tableName}', function(Blueprint \$table)
-        {
+class {$className} extends Migration {
+    public function up() {
+        Schema::create('{$tableName}', function(Blueprint \$table) {
 {$up}
         });
     }
 
-    public function down()
-    {
+    public function down() {
         Schema::drop('{$tableName}');
     }
 }
@@ -199,15 +203,13 @@ EOT;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class {$tableName}Seeder extends Seeder
-{
+class {$tableName}Seeder extends Seeder {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
 {$run}
     }
 }
@@ -455,7 +457,7 @@ EOT;
     }
 
 
-    public static function createForm($FRoot,$VRoot,$ft,$params){
+    public static function createForm($FRoot,$VRoot,$ft,$params) {
         $formRows = json_decode($params['formList']);
         $formValidations = json_decode($params['validationList']);
 
@@ -501,7 +503,7 @@ EOT;
 
         $rules = [];
         $messages = [];
-        foreach($formValidations as $item){
+        foreach($formValidations as $item) {
             $ruleField = trim($item->field);
             $ruleList = [];
             foreach($item->list as $it){
@@ -521,28 +523,28 @@ EOT;
 
         $formMore = [];
 
-        if(!empty(trim($params['current-table']))){
+        if(!empty(trim($params['current-table']))) {
             $formMore['id'] = strtolower(trim($params['current-table'])).'-form';
             $formMore['name'] = strtolower(trim($params['current-table'])).'-form';
         }
 
-        if(!empty(trim($params['form-method']))){
+        if(!empty(trim($params['form-method']))) {
             $formMore['method'] = trim($params['form-method']);
         }
 
-        if(!empty(trim($params['form-url']))){
+        if(!empty(trim($params['form-url']))) {
             $formMore['url'] = trim($params['form-url']);
         }
 
-        if(!empty(trim($params['form-route']))){
+        if(!empty(trim($params['form-route']))) {
             $formMore['route'] = trim($params['form-route']);
         }
 
-        if(!empty(trim($params['form-action']))){
+        if(!empty(trim($params['form-action']))) {
             $formMore['action'] = trim($params['form-action']);
         }
 
-        if(!empty(trim($params['form-class-name']))){
+        if(!empty(trim($params['form-class-name']))) {
             $formMore['class'] = trim($params['form-class-name']);
         }
 
