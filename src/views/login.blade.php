@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>登录Laravel Admin Generator</title>
 
-    <link href="/assets/juhedao/admin-generator/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/juhedao/admin-generator/css/datepicker3.css" rel="stylesheet">
-    <link href="/assets/juhedao/admin-generator/css/styles.css" rel="stylesheet">
+    <link href="{{ asset('assets/juhedao/admin-generator/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/juhedao/admin-generator/css/datepicker3.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/juhedao/admin-generator/css/styles.css') }}" rel="stylesheet">
 
     <!--[if lt IE 9]>
-    <script src="/assets/juhedao/admin-generator/js/html5shiv.js"></script>
-    <script src="/assets/juhedao/admin-generator/js/respond.min.js"></script>
+    <script src="{{ asset('assets/juhedao/admin-generator/js/html5shiv.js') }}/"></script>
+    <script src="{{ asset('assets/juhedao/admin-generator/js/respond.min.js') }}"></script>
     <![endif]-->
 
 </head>
@@ -32,7 +32,7 @@
             <div class="panel-heading">登录 Laravel Admin Generator</div>
 
             <div class="panel-body">
-                <form role="form" method="post" action="/admin/generator/login">
+                <form role="form" method="post" action="{{ url('/admin/generator/login') }}">
                     <fieldset>
                         <div class="form-group">
                             <input class="form-control" placeholder="管理员账号" name="name"  autofocus="">
