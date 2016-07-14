@@ -1,10 +1,10 @@
 
-<script src="/assets/juhedao/admin-generator/js/chart.min.js"></script>
-<script src="/assets/juhedao/admin-generator/js/chart-data.js"></script>
-<script src="/assets/juhedao/admin-generator/js/easypiechart.js"></script>
-<script src="/assets/juhedao/admin-generator/js/easypiechart-data.js"></script>
-<script src="/assets/juhedao/admin-generator/js/easypiechart-data.js"></script>
-<script src="/assets/juhedao/admin-generator/js/bootstrap-datepicker.js"></script>
+<script src="{{ asset('assets/juhedao/admin-generator/js/chart.min.js') }}"></script>
+<script src="{{ asset('assets/juhedao/admin-generator/js/chart-data.js') }}"></script>
+<script src="{{ asset('assets/juhedao/admin-generator/js/easypiechart.js') }}"></script>
+<script src="{{ asset('assets/juhedao/admin-generator/js/easypiechart-data.js') }}"></script>
+<script src="{{ asset('assets/juhedao/admin-generator/js/easypiechart-data.js') }}"></script>
+<script src="{{ asset('assets/juhedao/admin-generator/js/bootstrap-datepicker.js') }}"></script>
 <script>
     !function ($) {
         $(document).on("click","ul.nav li.parent > a > span.icon", function(){
